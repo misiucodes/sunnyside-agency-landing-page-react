@@ -1,7 +1,13 @@
+import Navbar from "./Navbar";
+import Main from "./Main";
+import Body from "./Body";
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello world!</h1>
+      <Navbar />
+      <Main />
+      <Body />
     </div>
   );
 }

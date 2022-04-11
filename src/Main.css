@@ -1,0 +1,33 @@
+:root {
+  --red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dk-cyan: hsl(167, 40%, 24%);
+  --dk-blue: hsl(198, 62%, 26%);
+  --dk-mod-cyan: hsl(168, 34%, 41%);
+  --v-dk-sat-blue: hsl(212, 27%, 19%);
+  --v-dk-gray-blue: hsl(213, 9%, 39%);
+  --dk-gray-blue: hsl(232, 10%, 55%);
+  --gray-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background: url(images/header.jpg) center center/cover no-repeat;
+  background-position: 0px -40px;
+  background-size: 100%;
+  margin: 0;
+}
+
+h1.title {
+  font-family: 'Fraunces', serif;
+  color: var(--white);
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 6px;
+  padding-top: 1.75em;
+}
+
+img.img-arrow {
+  display: block;
+  margin: 0 auto;
+}

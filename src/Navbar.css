@@ -1,0 +1,60 @@
+:root {
+  --red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dk-cyan: hsl(167, 40%, 24%);
+  --dk-blue: hsl(198, 62%, 26%);
+  --dk-mod-cyan: hsl(168, 34%, 41%);
+  --v-dk-sat-blue: hsl(212, 27%, 19%);
+  --v-dk-gray-blue: hsl(213, 9%, 39%);
+  --dk-gray-blue: hsl(232, 10%, 55%);
+  --gray-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --lt-cyan: rgba(255, 255, 255, 0.5);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 2.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar-logo {
+  justify-self: flex-start;
+  cursor: pointer;
+  height: 24px;
+  padding-top: 1.4em;
+}
+
+li.navbar-item {
+  display: inline-block;
+  font-family: Barlow, sans-serif;
+  color: var(--white);
+  padding-right: 2em;
+  font-size: 17px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+li:hover {
+  color: var(--lt-cyan);
+  transition: all 300ms ease-in-out;
+}
+
+.btn-contact {
+  border: none;
+  border-radius: 1.45em;
+  padding: 1em 1.5em;
+  font-family: 'Fraunces', sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn-contact:hover {
+  color: var(--white);
+  background-color: var(--lt-cyan);
+  transition: all 300ms ease-in-out;
+}
