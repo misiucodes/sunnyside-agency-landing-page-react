@@ -50,28 +50,30 @@ function Body({
             LEARN MORE
           </button>
         </div>
+
       </div>
 
-        <div className="row bottom_row">
+        <div className="bottom-row">
 
           <div className="bottom_left">
             <div className="col img-wrapper">
               <img src={graphic} alt="cherries" className="img-main-pg"></img>
             </div>
-            <div className="text-wrapper-bottom">
+            <div className="col text-wrapper-bottom">
               <div className="top-line-graphic">
                 Graphic Design
               </div>
               <p className="description-graphic">
                 Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.
               </p>
+            </div>
           </div>
-          
-          {/* <div className="bottom_right">
+            
+          <div className="bottom_right">
             <div className="col img-wrapper">
               <img src={photography} alt="orange" className="img-main-pg"></img>
             </div>
-            <div className="text-wrapper-bottom">
+            <div className=" col text-wrapper-bottom">
               <div className="top-line-photography">
                 Photography
               </div>
@@ -79,10 +81,10 @@ function Body({
                 Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
               </p>
             </div>
-          </div> */}
+          </div>
           
-        </div>
       </div>
+
     </div>
   );
 }
