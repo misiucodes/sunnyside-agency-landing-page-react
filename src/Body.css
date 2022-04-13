@@ -163,9 +163,13 @@
     width: 55%;
   }
 
-  info__description-graphic,
+  .info__description-graphic,
   .info__description-photography {
-    width: 40%;
+    width: 39%;
+  }
+
+  .info__description {
+    width: 65%;
   }
 }
 
