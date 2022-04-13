@@ -1,6 +1,9 @@
 import Navbar from "./Navbar";
 import Main from "./Main";
 import Body from "./Body";
+import ClientTestimonials from "./ClientTestimonials";
+
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -8,6 +11,9 @@ function App() {
       <Navbar />
       <Main />
       <Body />
+      <ClientTestimonials />
+     
+      <Footer />
     </div>
   );
 }

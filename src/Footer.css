@@ -1,0 +1,74 @@
+:root {
+  --red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dk-cyan: hsl(167, 40%, 24%);
+  --dk-blue: hsl(198, 62%, 26%);
+  --dk-mod-cyan: hsl(168, 34%, 41%);
+  --v-dk-sat-blue: hsl(212, 27%, 19%);
+  --v-dk-gray-blue: hsl(213, 9%, 39%);
+  --dk-gray-blue: hsl(232, 10%, 55%);
+  --gray-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --lt-green: hsl(168, 44%, 70%);
+}
+
+footer {
+  background-color: var(--lt-green);
+  display: grid;
+  grid: repeat(3, 1fr);
+  padding: 6rem 25rem 7rem 25rem;
+  justify-content: center;
+}
+
+.img-logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.footer-navbar-menu {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 3.25em;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.footer-navbar-item {
+  font-family: Barlow, sans-serif;
+  flex: 1 1 33%;
+  font-weight: 700; 
+  color: var(--dk-cyan);
+  transition: all 200ms ease-in-out;
+}
+
+.footer-navbar-item:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 3em;
+  margin: 0 auto;
+}
+
+.social-icon {
+  border: none;
+  background-color: transparent;
+}
+
+.social-icon:hover {
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+
+
+
+
+
+

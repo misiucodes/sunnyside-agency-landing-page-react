@@ -1,11 +1,12 @@
 import React from "react";
 import "./Navbar.css";
+import logo from "./images/logo.svg";
 
 function Navbar() {
   return (
-    <nav>
-      <img className="navbar-logo" src="images/logo.svg" width="124" alt="sunnyside-logo" />
-      <ul>
+    <nav className="navbar-top">
+      <img className="navbar-logo" src={logo} width="124" alt="sunnyside-logo" />
+      <ul className="navbar-top-menu">
         <li className="navbar-item">
           About
         </li>

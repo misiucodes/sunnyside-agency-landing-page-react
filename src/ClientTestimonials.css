@@ -1,0 +1,60 @@
+:root {
+  --red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dk-cyan: hsl(167, 40%, 24%);
+  --dk-blue: hsl(198, 62%, 26%);
+  --dk-mod-cyan: hsl(168, 34%, 41%);
+  --v-dk-sat-blue: hsl(212, 27%, 19%);
+  --v-dk-gray-blue: hsl(213, 9%, 39%);
+  --dk-gray-blue: hsl(232, 10%, 55%);
+  --gray-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+section {
+  background-color: var(--white);
+  padding: 11.5em 8em 6em 8em;
+}
+
+.headline {
+  font-family: Fraunces, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--gray-blue);
+  padding-bottom: 2em;
+}
+
+.client-wrapper {
+  display: flex;
+}
+
+.client-wrapper > * {
+  flex-basis: 33%;
+  flex-wrap: wrap;
+  padding: 4em 1.5em;
+}
+
+.testimonial {
+  font-family: Barlow, sans-serif;
+  text-align: center;
+  padding: 1em 2em 3em 2em;
+}
+
+.client-name {
+  font-family: Fraunces, sans-serif;
+  text-align: center;
+}
+
+.client-title {
+  font-family: Barlow, sans-serif;
+  text-align: center;
+  color: var(--gray-blue);
+}
+
+.img-client {
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  width: 100px;
+}
