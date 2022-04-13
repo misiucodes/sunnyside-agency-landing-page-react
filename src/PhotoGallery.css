@@ -2,8 +2,11 @@
   display: flex;
 }
 
-.photo-gallery > * {
-  flex: 
+.gallery-photo {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+
 }
 
 

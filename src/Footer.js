@@ -42,6 +42,9 @@ function Footer() {
           </button>
         </span>
       </div>
+      <span className="attribution">
+        Challenge by <strong className="attribution-style">Frontend Mentor. </strong>Coded by <strong className="attribution-style">Michelle.</strong>
+      </span>
     </footer>
   );
 }

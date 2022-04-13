@@ -13,7 +13,7 @@
 
 section {
   background-color: var(--white);
-  padding: 11.5em 8em 6em 8em;
+  padding: 15em 8em 6em 8em;
 }
 
 .headline {
@@ -23,6 +23,7 @@ section {
   letter-spacing: 5px;
   color: var(--gray-blue);
   padding-bottom: 2em;
+  padding-top: 4rem;
 }
 
 .client-wrapper {
@@ -44,6 +45,7 @@ section {
 .client-name {
   font-family: Fraunces, sans-serif;
   text-align: center;
+  margin-bottom: .5rem;
 }
 
 .client-title {

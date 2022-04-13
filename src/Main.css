@@ -13,9 +13,13 @@
 
 body {
   background: url(images/header.jpg) center center/cover no-repeat;
-  background-position: 0px -40px;
+  background-position: 0px -50px;
   background-size: 100%;
   margin: 0;
+}
+
+header {
+  min-height: 600px;
 }
 
 h1.title {
@@ -30,4 +34,17 @@ h1.title {
 img.img-arrow {
   display: block;
   margin: 0 auto;
+}
+
+
+@media screen and (min-width: 1000px) {
+  header {
+    min-height: 800px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    min-height: 600px;
+  }
 }
