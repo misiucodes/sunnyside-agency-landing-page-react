@@ -40,6 +40,7 @@ section {
   font-family: Barlow, sans-serif;
   text-align: center;
   padding: 1em 2em 3em 2em;
+  color: var(--v-dk-sat-blue);
 }
 
 .client-name {

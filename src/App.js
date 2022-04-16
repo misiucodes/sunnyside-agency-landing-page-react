@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+import Navbar2 from "./Navbar2";
 import Main from "./Main";
 import Body from "./Body";
 import ClientTestimonials from "./ClientTestimonials";
@@ -8,7 +8,7 @@ import PhotoGallery from "./PhotoGallery";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar2 />
       <Main />
       <Body />
       <ClientTestimonials />

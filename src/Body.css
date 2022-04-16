@@ -142,21 +142,7 @@
 }
 
 
-@media screen and (min-width: 500px) {
-  .info__headline {
-    width: 75%;
-  }
 
-  .info__text-transform,
-  .info__text-standout {
-    padding: 15rem 8rem;
-  }
-
-  .info__description-graphic,
-  .info__description-photography {
-    width: 50%;
-  }
-}
 
 @media screen and (min-width: 1700px) {
   .info__headline {
