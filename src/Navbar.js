@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
-import "./Navbar.css";
 import logo from "./images/logo.svg";
+import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-function Navbar() {
-  const [button, setButton] = useState(true);
-  const [click, setClick] = useState(false);
 
-  const handleClick = () =>setClick(!click);
-  const closeMobileMenu = () => setClick(False);
+function Navbar() {
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
   const showButton = () => {
     if(window.innerWidth <= 960) {
@@ -18,20 +19,18 @@ function Navbar() {
     }
   };
 
-   useEffect(() => {
+  useEffect(() => {
     showButton();
-      window.addEventListener("resize", showButton);
+    window.addEventListener("resize", showButton);
   }, []);
 
-  window.addEventListener("resize", showButton);
-
   return (
-    <nav className="navbar-menu">
-      <img className="navbar-logo" src={logo} width="124" alt="sunnyside-logo" />
+    <nav className="navbar">
+      <img src={logo} alt="Sunnyside logo" className="navbar-logo" onClick={closeMobileMenu}></img>
       <div className="mobile-menu-icon" onClick={handleClick}>
-        {click ? <FaTimes /> : <FaBars /> }
+        {click ? <FaTimes /> : <FaBars />}
       </div>
-      <ul className={click ? "nav-menu-active" : "nav-menu"}>
+      <ul className={click ? "navbar-menu-active" : "navbar-menu"}>
         <li className="navbar-item" onClick={closeMobileMenu}>
           About
         </li>
@@ -41,14 +40,15 @@ function Navbar() {
         <li className="navbar-item" onClick={closeMobileMenu}>
           Projects
         </li>
-        <li className="navbar-btn">
+        <li className="navbar-item">
           {button ? (
-            <button className="btn-contact" onClick={closeMobileMenu}>
-            <strong>CONTACT</strong>
-          </button>
+          <a href="/" className="navbar-btn" onClick={closeMobileMenu}>
+            CONTACT
+          </a>
           ) : (
-              <button className="btn-contact-mobile" onClick={closeMobileMenu}>
-              </button>
+            <a href="/" className="navbar-btn-mobile" onClick={closeMobileMenu}>
+              CONTACT
+            </a>
           )}
         </li>
       </ul>

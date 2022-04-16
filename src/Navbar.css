@@ -12,80 +12,140 @@
   --lt-cyan: rgba(255, 255, 255, 0.5);
 }
 
+/*DESKTOP NAVBAR STYLING*/
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5em 3em;
-  background-color: #40bcfc;
-  height: 82px;
-}
 
 .navbar {
+ display: flex;
+ position: sticky;
+ z-index: 1;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #40bcfc;
+}
+
+.navbar-menu {
+  display: flex;
   list-style: none;
+  justify-content: space-between;
+  padding-top: 2.85rem;
+}
+
+.navbar-item {
+  justify-content: space-between;
+  margin-right: 2.5rem;
+  justify-content: flex-end;
+  font-family: Barlow, sans-serif;
+  color: var(--white);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.navbar-item:hover {
+  transition: all 0.3s ease 0s; 
+  cursor: pointer;
+  color: var(--dk-blue);
 }
 
 .navbar-logo {
-  justify-self: flex-start;
+  justify-content: flex-start;
   cursor: pointer;
+  display: flex;
   height: 24px;
-  padding-top: 1.4em;
+  padding-top: 2.5rem;
+  padding-left: 1.85rem;
 }
-
-li.navbar-item {
-  display: inline-block;
-  font-family: Barlow, sans-serif;
-  color: var(--white);
-  padding-right: 2.95em;
-  font-size: 18px;
-  font-weight: bolder;
-  cursor: pointer;
-}
-
-li:hover {
-  color: var(--lt-cyan);
-  transition: all 300ms ease-in-out;
-}
-
-.btn-contact {
+.navbar-btn {
+  font-family: Fraunces, sans-serif;
   border: none;
-  border-radius: 2em;
-  padding: 1em 1.85em;
-  font-family: 'Fraunces', sans-serif;
-  font-size: 1em;
-  cursor: pointer;
-  letter-spacing: .5px;
+  background-color: var(--white);
+  font-size: 15px;
+  border-radius: 33px;
+  padding: .85rem 1.5rem;
+  text-decoration: none;
+  color: black;
 }
 
-.btn-contact:hover {
+.navbar-btn:hover {
+  background-color: rgb(141, 214, 254);
+  transition: all 0.3s ease 0s;
   color: var(--white);
-  background-color: var(--lt-cyan);
-  transition: all 300ms ease-in-out;
 }
+
+.mobile-menu-icon {
+  display: none;
+  color: var(--white);
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+/*MOBILE NAVBAR STYLING*/
 
 @media screen and (max-width: 960px) {
   .navbar-item {
     position: relative;
+    width: 100%;
+    color: var(--dk-gray-blue);
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2.5rem;
   }
 
-  .nav-menu {
+  .navbar-menu {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 92vh;
+    height: 40px;
     position: absolute;
-    top: 80px;
+    top: 85px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
     justify-content: center;
   }
 
-  .nav-menu-active {
-    background: var(--dk-mod-cyan);
+  .navbar-menu-active {
+    background-color: var(--white);
     left: 0;
     opacity: 1;
     transition: all 0.6s ease;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 2rem 4rem;
     z-index: 1;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-4%, -20%);
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: var(--white);
+    font-size: 2rem;
+  }
+
+  .navbar-btn-mobile {
+    border-radius: 33px;
+    text-decoration: none;
+    color: black;
+    font-family: Fraunces, sans-serif;
+    background-color: var(--yellow);
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    
   }
 }
