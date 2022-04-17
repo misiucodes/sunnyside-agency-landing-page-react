@@ -68,7 +68,7 @@
 
 .navbar-btn:hover {
   background-color: rgb(141, 214, 254);
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s ease-in-out;
   color: var(--white);
 }
 
@@ -81,7 +81,8 @@
 
 /*MOBILE NAVBAR STYLING*/
 
-@media screen and (max-width: 960px) {
+
+@media screen and (max-width: 970px) {
   .navbar-item {
     position: relative;
     width: 100%;
@@ -106,14 +107,29 @@
 
   .navbar-menu-active {
     background-color: var(--white);
-    left: 0;
     opacity: 1;
-    transition: all 0.6s ease;
+    transition: all 0.3s ease-in-out;
+    flex-direction: column;
+    padding: 3rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    top: 105px;
+    left: 50px;
+    right: 50px;
+  }
+
+  .navbar-menu-active::before {
     display: block;
-    margin: 0 auto;
-    margin-top: 5rem;
-    padding: 2rem 4rem;
-    z-index: 1;
+    position: absolute;
+    right: 0px;
+    top: -113px;
+    content: '';
+    width: 0;
+    height: 0;
+    transform: translateY(83px);
+    border-bottom: 30px solid var(--white);
+    border-left: 30px solid transparent;
   }
 
   .navbar-logo {
@@ -146,6 +162,5 @@
     margin: 0 auto;
     padding: 1rem 1.5rem;
     margin-top: 1rem;
-    
   }
 }

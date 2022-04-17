@@ -18,10 +18,12 @@ function Body2() {
           <p className="info__description">
             We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
           </p>
-          <a href="/" className="btn-learnmore">
-            Learn More 
-          </a>
-          <div className="btn-underline-transform"></div>
+          <div className="btn-container">
+            <a href="/" className="btn-learnmore">
+              Learn More 
+            </a>
+            <div className="btn-underline-transform"></div>
+          </div>
         </div>
 
         <div className="info__img-transform">
@@ -42,10 +44,12 @@ function Body2() {
           <p className="info__description">
             Using a collaborative formula of designers, researchers, photographers, videographers, and copyrighters, we'll build and extend your brand in digital places.
           </p>
-          <a href="/" className="btn-learnmore">
-            Learn More
-          </a>
-          <div className="btn-underline-standout"></div>
+          <div className="btn-container">
+            <a href="/" className="btn-learnmore">
+              Learn More
+            </a>
+            <div className="btn-underline-standout"></div>
+          </div>
         </div>
 
       </div>

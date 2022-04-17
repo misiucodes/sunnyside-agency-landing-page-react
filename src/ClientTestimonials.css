@@ -13,7 +13,7 @@
 
 section {
   background-color: var(--white);
-  padding: 15em 8em 8em 8em;
+  padding: 14em 8em 9em 8em;
 }
 
 .headline {
@@ -22,8 +22,8 @@ section {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: var(--gray-blue);
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-size: 18px;
 }
 
 .client-wrapper {
@@ -33,7 +33,7 @@ section {
 .client-wrapper > * {
   flex-basis: 33%;
   flex-wrap: wrap;
-  padding: 4em 1.5em;
+  padding: 4em auto;
 }
 
 .testimonial {
@@ -41,6 +41,8 @@ section {
   text-align: center;
   padding: 1em 2em 3em 2em;
   color: var(--v-dk-sat-blue);
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .client-name {
@@ -62,13 +64,13 @@ section {
   width: 100px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 970px) {
   section {
-    padding: 5rem 0;
+    padding: 3rem 0;
   }
 
   .headline {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
   
   .client-wrapper {
@@ -77,11 +79,10 @@ section {
   }
 
   .col-emily, .col-thomas, .col-jennie {
-    padding-bottom: 1.5rem;
+    padding: 2rem .5rem;
   }
 
   .testimonial {
-    width: 60%;
     margin: 0 auto;
     font-size: 18px;
   }

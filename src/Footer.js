@@ -9,6 +9,7 @@ import twitter from "./images/icon-twitter.svg";
 function Footer() {
   return (
     <footer>
+      <div className="footer-content">
       <div className="footer-logo">
         <img src={logo} alt="Sunnyside logo" 
         className="img-logo"/>
@@ -45,6 +46,7 @@ function Footer() {
       <span className="attribution">
         Challenge by <strong className="attribution-style">Frontend Mentor. </strong>Coded by <strong className="attribution-style">Michelle.</strong>
       </span>
+      </div>
     </footer>
   );
 }

@@ -9,6 +9,13 @@
 
 }
 
+@media screen and (max-width: 900px) {
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
 
 

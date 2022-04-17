@@ -21,6 +21,10 @@ footer {
   margin-top: -4px;
 }
 
+.footer-content {
+  display: grid;
+}
+
 .img-logo {
   display: block;
   margin: 0 auto;
@@ -83,11 +87,29 @@ footer {
   font-size: 15px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 970px) {
   footer {
     padding: 6rem 0;
     width: 100%;
     
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-content {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    padding-bottom: 3rem;
+  }
+
+  .attribution, .attribution-style {
+    font-size: 10px;
+  }
+
+  .footer-navbar-item {
+    font-size: 16px;
   }
 }
 
