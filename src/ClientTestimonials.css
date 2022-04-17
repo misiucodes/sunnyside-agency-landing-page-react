@@ -62,10 +62,27 @@ section {
   width: 100px;
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (max-width: 600px) {
+  section {
+    padding: 5rem 0;
+  }
+
+  .headline {
+    margin-top: 2rem;
+  }
+  
+  .client-wrapper {
+    display: grid;
+    grid: repeat(3, 1fr);
+  }
+
+  .col-emily, .col-thomas, .col-jennie {
+    padding-bottom: 1.5rem;
+  }
+
   .testimonial {
     width: 60%;
-    word-wrap: break-word;
     margin: 0 auto;
+    font-size: 18px;
   }
 }
