@@ -27,8 +27,9 @@
 .navbar-menu {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 2.85rem;
+  
 }
 
 .navbar-item {
@@ -48,13 +49,15 @@
 }
 
 .navbar-logo {
-  justify-content: flex-start;
-  cursor: pointer;
-  display: flex;
-  height: 24px;
-  padding-top: 2.5rem;
-  padding-left: 1.85rem;
+justify-content: left;
+cursor: pointer;
+display: flex;
+height: 32px;
+padding-top: 2.5rem;
+padding-left: 33px;
+padding-right: 29rem;
 }
+
 .navbar-btn {
   font-family: Fraunces, sans-serif;
   border: none;

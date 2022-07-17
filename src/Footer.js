@@ -44,7 +44,7 @@ function Footer() {
         </span>
       </div>
       <span className="attribution">
-        Challenge by <strong className="attribution-style">Frontend Mentor. </strong>Coded by <strong className="attribution-style">Michelle.</strong>
+        </strong>Coded by <strong className="attribution-style">Michelle.</strong>
       </span>
       </div>
     </footer>
