@@ -44,7 +44,7 @@ function Footer() {
         </span>
       </div>
       <span className="attribution">
-        Coded by <strong className="attribution-style">Michelle.</strong>
+        Coded by <strong className="attribution-style"><a href="https://michelletran.dev">Michelle Tran.</a></strong>
       </span>
       </div>
     </footer>
