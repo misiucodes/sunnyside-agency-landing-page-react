@@ -44,7 +44,7 @@ function Footer() {
         </span>
       </div>
       <span className="attribution">
-        </strong>Coded by <strong className="attribution-style">Michelle.</strong>
+        Coded by <strong className="attribution-style">Michelle.</strong>
       </span>
       </div>
     </footer>
